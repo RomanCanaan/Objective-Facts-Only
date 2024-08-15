@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,10 +16,12 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
@@ -26,6 +29,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -68,11 +72,64 @@ footer {
     padding: 10px 0;
 }
 
-/* Add this rule to set all images to the same size */
 img {
     width: 100%;
-    max-width: 800px; /* Adjust this value as needed */
-    height: 600px;
+    max-width: 600px; /* Adjust as needed */
+    height: auto;
     display: block;
-    margin: 20px 0; /* Adjust the margin to suit your design */
+    margin: 20px 0;
+}
+
+/* Responsive Styles for Tablets */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Responsive Styles for Phones */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%; /* Ensure images fit within the screen */
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
