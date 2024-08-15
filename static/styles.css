@@ -71,8 +71,8 @@ footer {
 /* Add this rule to set all images to the same size */
 img {
     width: 100%;
-    max-width: 600px; /* Adjust this value as needed */
-    height: 400px;
+    max-width: 700px; /* Adjust this value as needed */
+    height: 500px;
     display: block;
     margin: 20px 0; /* Adjust the margin to suit your design */
 }
