@@ -72,10 +72,11 @@ footer {
     padding: 10px 0;
 }
 
+/* Ensuring all images are the same size */
 img {
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
-    max-height: 500px;
+    width: 600px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
     display: block;
     margin: 20px 0;
 }
@@ -100,6 +101,12 @@ img {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    /* Adjust image size for tablets */
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Responsive Styles for Phones */
@@ -116,8 +123,10 @@ img {
         padding: 10px;
     }
 
+    /* Adjust image size for phones */
     img {
-        max-width: 100%; /* Ensure images fit within the screen */
+        width: 100%; /* Ensure images fit within the screen */
+        height: auto; /* Maintain aspect ratio */
     }
 
     body {
