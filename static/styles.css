@@ -72,7 +72,7 @@ footer {
 img {
     width: 100%;
     max-width: 600px; /* Adjust this value as needed */
-    height: auto;
+    height: 400px;
     display: block;
     margin: 20px 0; /* Adjust the margin to suit your design */
 }
