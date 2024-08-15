@@ -75,7 +75,7 @@ footer {
 img {
     width: 100%;
     max-width: 600px; /* Adjust as needed */
-    height: auto;
+    height: 500;
     display: block;
     margin: 20px 0;
 }
