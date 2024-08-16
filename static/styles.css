@@ -111,13 +111,11 @@ img {
 
 /* Responsive Styles for Phones */
 @media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
+    img {
+        width: 100%; /* Fit image within the screen width */
+        height: auto; /* Maintain aspect ratio */
     }
-
-    nav ul li {
-        margin: 5px 0;
-    }
+}
 
     article {
         padding: 10px;
