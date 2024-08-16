@@ -76,7 +76,6 @@ footer {
 img {
     max-width: 400px; /* Fixed width */
     max-height: 400px; /* Fixed height */
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
     display: block;
     margin: 20px 0;
 }
