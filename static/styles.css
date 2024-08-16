@@ -75,7 +75,7 @@ footer {
 /* Ensuring all images are the same size */
 img {
     max-width: 400px; /* Fixed width */
-    max-height: 400px; /* Fixed height */
+    max-height: 350px; /* Fixed height */
     display: block;
     margin: 20px 0;
 }
